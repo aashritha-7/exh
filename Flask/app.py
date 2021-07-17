@@ -27,8 +27,8 @@ def predict():
    
     return render_template('resultEA.html', prediction_text=output)
 if __name__=="__main__":
-     port = int(os.getenv('PORT', 8000))
-     app.run(host='0.0.0.0', port=port, debug=True)
+    port = int(os.getenv('PORT', 8000))
+    app.run(host='0.0.0.0', port=port, debug=True)
      #http_server = WSGIServer(('0.0.0.0', port), app)
      #http_server.serve_forever()
     #app.run(debug=True)
